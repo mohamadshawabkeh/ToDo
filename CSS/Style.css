@@ -1,0 +1,83 @@
+nav {
+    background-color: grey;
+background-position-x: center ;
+background-size: 800px;
+font-size:xx-large;
+text-align: center;
+text-decoration-color: black;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1 {
+text-align: center;
+font-family: cursive;
+
+}
+table,th,td {
+    margin-left: 270px;
+    text-align: center;
+border: 4px solid;
+width: 50%;
+
+vertical-align: middle;
+padding: 15px;
+
+
+}
+th {
+    height: 70px;
+    font-size: x-large;
+    font-family: cursive;
+    text-align: center;
+}
+p {
+    
+    background-color: grey;
+background-position-x: center ;
+background-size: 800px;
+font-size:medium;
+text-align: center;
+text-decoration-color: black;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2 {
+text-align: center;
+font-family: cursive;
+color: red;
+font-size: xx-large;
+}
+.overveiw {
+    border:5px solid ;
+    text-align: center;
+    margin: 70px;
+   padding: 20px;
+  }
+  .contact {
+    
+    text-align: center;
+    font-family: cursive;
+    color:darkred ;
+    font-size: xx-large;
+    }
+form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 2px solid ;
+        border-radius: 5px;
+}
+      
+label {
+ margin-top: 10px;
+ font-weight: bold;
+}
+      
+input {
+      padding: 10px;
+      border: 1px solid ;
+      border-radius: 5px;
+}
+      
+      
+
