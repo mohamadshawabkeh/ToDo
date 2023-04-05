@@ -5,22 +5,35 @@ var userGender = prompt("Please enter your gender (male or female):");
 var userAge = parseInt(prompt('Please enter your age:'));
 var skipMessage = confirm("Do you want to skip the welcoming message?");
 
-if (userGender !== "male" && userGender !== "female") {
-  userGender = prompt("Invalid input. The answer should be 'male' or 'female':");
+if (userGender == "male") {
+  alert('welcome to To Do List website Mr '+ userName);
+} else if (userGender == "female") {
+  alert ('welcome to To Do List website Ms ' + userName);
+} else if (userGender == " ") {
+  userGender="invalid";    // If the input was empty consider the answer to be an "invalid" string.
+} else {     
+ alert ('welcome to To Do List website');
+
+
 }
 
-if (userAge <=0 ) {
-     alert('Please enter your right age')
-     prompt('Please enter your age:')
+while (true) {               // you have to check the age is not less than 0
+  if (userAge > 0) {
+    break; 
+  }
+  alert('Invalid age! Please enter a the right age.');
+  userAge = parseInt(prompt('Please enter your age:'))
 }
 
-if (userGender = 'male') {
-    alert('welcome to To Do List website Mr '+ userName);
-} else if (userGender = 'female') {
-    alert ('welcome to To Do List website Ms jack' + userName);
+var excited= confirm("Are you excited to try our website?");
+var contact= confirm("Do you have an email to contact?");
+var colorDes= confirm("Do you prefer colorful design?");
 
-} else {
-   alert ('welcome to To Do List website')
-}
+const answers=[userName,userGender,userAge,excited,contact,colorDes];
+console.log(answers);
+
+
+
+
 
 
