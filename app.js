@@ -25,14 +25,29 @@ while (true) {               // you have to check the age is not less than 0
   userAge = parseInt(prompt('Please enter your age:'))
 }
 
-var excited= confirm("Are you excited to try our website?");
-var contact= confirm("Do you have an email to contact?");
-var colorDes= confirm("Do you prefer colorful design?");
+var excited= prompt("Are you excited to try our website? (Yes/No)");
+if (excited ===""){
+  console.log("invalid");
+} else {
+  console.log(excited);
+}
+var contact= prompt("Do you have an email to contact? (Yes/No)");
+if (contact ===""){
+  console.log("invalid");
+} else {
+  console.log(contact);
+}
+var colorDes= prompt("Do you prefer colorful design? (Yes/No)");
+if (colorDes ===""){
+  console.log("invalid");
+} else {
+  console.log(colorDes);
+}
 
 const answers=[userName,userGender,userAge,excited,contact,colorDes];
-console.log(answers);
-
-
+for (let i = 0; i < answers.length; i++) {
+  console.log(answers[i]);
+}
 
 
 
