@@ -1,4 +1,4 @@
-"use strict";
+"use strict"
 
 var userName= prompt('Please enter your name'); 
 var userGender = prompt("Please enter your gender (male or female):");
